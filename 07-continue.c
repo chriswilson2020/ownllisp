@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+	for (int j=0; j<=8; j++)
+	{
+		if (j==4)
+		{
+			/* The continue statment is encountered when
+			 * the value of j is equal to 4.
+			 */
+			continue;
+		}
+
+		/* This print statment would not execute for the 
+		 * loop iteration where j ==4 because in that case
+		 * this statement would be skipped.
+		 */
+		printf("%d ", j);
+	}
+	return 0;
+}
